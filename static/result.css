@@ -1,0 +1,57 @@
+ /* CSS to center align content and style buttons */
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set full height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Use Arial font */
+    background-image: url('../static/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optionally, you can add a fallback background color */
+    background-color: #cccecf; /* Fallback color */
+}
+.image-container {
+    max-width: 720px; /* Set max width */
+    max-height: 720px; /* Set max height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Enable absolute positioning */
+}
+.image-container img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline behavior */
+}
+.image-info {
+    position: absolute; /* Position relative to the container */
+    bottom: 0; /* Align at the bottom */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px; /* Add padding */
+    width: 100%; /* Full width */
+}
+.buttons {
+    margin-top: 20px; /* Add some space above buttons */
+}
+.buttons button {
+    padding: 10px 20px; /* Add padding */
+    margin: 0 10px; /* Add margin between buttons */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor */
+    font-size: 16px; /* Set font size */
+}
+.buttons button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: "Edwardian Script ITC", cursive;
+    /* Add other properties as needed */
+}

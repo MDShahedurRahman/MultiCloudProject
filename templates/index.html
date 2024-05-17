@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudIDentify</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+    <div id="container">
+        <div class="wrapper">
+        <div id="video-container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="button-container">
+            <div id="button-line">
+                <button id="start-camera" class="button">Start Camera</button>
+                <button id="capture-photo" class="button" disabled>Capture Photo</button>
+                <input type="text" id="photo-name" class="button" placeholder="Enter photo name" disabled>
+                <button id="upload-photo" class="button" disabled>Upload Photo</button>
+            </div>
+            <div id="button-line">
+                <form id="file-upload-form" enctype="multipart/form-data">
+                    <input type="file" name="image" accept="image/*" capture>
+                    <button id="upload-file-btn" type="button" class="button">Upload File</button>
+                </form>
+                <button id="button gallery" type="button" class="button" onclick="window.location.href='/album';">Image Gallery</button>
+            </div>
+        </div>
+        </div>
+        <div id="message">Image uploaded successfully</div>
+    </div>
+
+    <script src="static/index.js"></script>
+</body>
+</html>

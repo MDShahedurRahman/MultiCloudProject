@@ -1,0 +1,73 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-multicloudproject-dev-e8ab2-authRole",
+      "UnauthRoleArn": "arn:aws:iam::381492296308:role/amplify-multicloudproject-dev-e8ab2-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::381492296308:role/amplify-multicloudproject-dev-e8ab2-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-multicloudproject-dev-e8ab2-deployment",
+      "UnauthRoleName": "amplify-multicloudproject-dev-e8ab2-unauthRole",
+      "StackName": "amplify-multicloudproject-dev-e8ab2",
+      "StackId": "arn:aws:cloudformation:us-east-2:381492296308:stack/amplify-multicloudproject-dev-e8ab2/8789ca70-f613-11ee-824d-028b0622b889",
+      "AmplifyAppId": "dmnjnaus3bxyi"
+    }
+  },
+  "auth": {
+    "multicloudproject70ec986f": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-multicloudproject-dev-e8ab2-deployment/amplify-cfn-templates/auth/multicloudproject70ec986f-cloudformation-template.json",
+        "logicalId": "authmulticloudproject70ec986f"
+      },
+      "lastPushTimeStamp": "2024-04-09T02:00:05.323Z",
+      "output": {
+        "UserPoolId": "us-east-2_pAESNTVV7",
+        "AppClientIDWeb": "5jmqrod73fk5mcj07b9ta7qa6c",
+        "AppClientID": "674om960enqquqteakhddq6v5f",
+        "IdentityPoolId": "us-east-2:9d346e7d-fea1-4f38-84a9-3ad4006e6a63",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:381492296308:userpool/us-east-2_pAESNTVV7",
+        "IdentityPoolName": "multicloudproject70ec986f_identitypool_70ec986f__dev",
+        "UserPoolName": "multicloudproject70ec986f_userpool_70ec986f"
+      },
+      "lastPushDirHash": "0WDuZq5Q7QrjvQfVQaxd/bhZTXc="
+    }
+  },
+  "storage": {
+    "multicloudproject": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-04-09T02:00:05.323Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-multicloudproject-dev-e8ab2-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storagemulticloudproject"
+      },
+      "output": {
+        "BucketName": "imagestoragee8ab2-dev",
+        "Region": "us-east-2"
+      },
+      "lastPushDirHash": "cT3D7J1MYOPgDqZVjrWDteoXvFc="
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "resourceName": "multicloudproject",
+  "policyUUID": "ba276fe0",
+  "bucketName": "imagestorage",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

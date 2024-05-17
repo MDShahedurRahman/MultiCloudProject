@@ -1,0 +1,79 @@
+ /* Style for the table */
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+    padding: 12px; /* Adjust padding to increase header height */
+    height: 20px; /* Adjust height to increase header height */
+}
+
+/* Style for the image */
+.thumbnail {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+#container {
+    position: relative;
+}
+
+#table-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    max-height: calc(100vh - 140px); /* Adjust as needed */
+    width: 90%; /* Adjust the width as needed */
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-family: "Edwardian Script ITC", cursive;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('../static/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optionally, you can add a fallback background color */
+    background-color: #cccecf; /* Fallback color */
+    overflow: hidden; /* Hide vertical scrollbar */
+}
+
+#nav-links {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding-top: 1px;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none;
+}
+
+.white-link:hover {
+    text-decoration: underline;
+}
